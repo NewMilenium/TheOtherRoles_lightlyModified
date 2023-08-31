@@ -223,7 +223,8 @@ namespace TheOtherRoles.Patches {
                 var index = rnd.Next(0, rolesToAssign[roleType].Count);
                 var roleId = rolesToAssign[roleType][index];
                 setRoleToRandomPlayer(rolesToAssign[roleType][index], players);
-                rolesToAssign[roleType].RemoveAt(index);
+                // en commentant cette ligne, on peut avoir plusieurs joueurs de chaque rôle
+                // rolesToAssign[roleType].RemoveAt(index);
 
                 if (CustomOptionHolder.blockedRolePairings.ContainsKey(roleId)) {
                     foreach(var blockedRoleId in CustomOptionHolder.blockedRolePairings[roleId]) {
