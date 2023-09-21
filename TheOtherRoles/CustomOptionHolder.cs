@@ -789,6 +789,8 @@ namespace TheOtherRoles {
             camsNightVision = CustomOption.Create(11, Types.General, "Cams Switch To Night Vision If Lights Are Off", false, null, true);
             camsNoNightVisionIfImpVision = CustomOption.Create(12, Types.General, "Impostor Vision Ignores Night Vision Cams", false, camsNightVision, false);
 
+            randomSpawnLocations = CustomOption.Create(1970, Types.General, "Random Spawn Locations", false);
+
 
             dynamicMap = CustomOption.Create(500, Types.General, "Play On A Random Map", false, null, true);
             dynamicMapEnableSkeld = CustomOption.Create(501, Types.General, "Skeld", rates, dynamicMap, false);
